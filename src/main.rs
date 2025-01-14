@@ -1,3 +1,10 @@
+
+
+fn add_one(number_to_add: i32) -> i32 {
+    return number_to_add + 1
+}
+
+
 fn main() {
     let mut names: Vec<String> = Vec::new();
     println!("Introduce nombre: ");
@@ -15,5 +22,9 @@ fn main() {
     for name in names {
         println!("name: {} ", name);
     }
+
+    let number = 10;
+    let result = add_one(number);
+    println!("Result: {}", result);
     
 }
